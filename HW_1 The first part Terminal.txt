@@ -1,0 +1,55 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я ----- pwd
+2) Создать папку ----- mkdir qa_1
+3) Зайти в папку ----- cd qa_1
+4) Создать 3 папки ----- mkdir less_1 less_2 less_3 
+5) Зайти в любоую папку ----- cd less_1
+6) Создать 5 файлов (3 txt, 2 json) ----- touch q1.txt q2.txt q3.txt q4.json q5.json
+7) Создать 3 папки ----- mkdir part_1 part_2 part_3
+8. Вывести список содержимого папки ----- ls -la
+9) + Открыть любой txt файл ----- vim q1.txt или (start q1.txt - откроется файл через проводник, там пишем текст, сохраняем) 
+10) + написать туда что-нибудь, любой текст.  ----- Войти в режим редактирования "I" -- ввести текст "Hello! Thanks for your help with this homework!" -- Esc.
+11) + сохранить и выйти  ----- :wq  -- enter
+12) Выйти из папки на уровень выше  ----- cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.  -----   mv less_1/q1.txt less_2/q1.txt   ----- mv less_1/q2.txt less_3/q2.txt или mv less_1/{q1.txt,q2.txt} less_2/
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.  -----   cp less_1/q3.txt less_3/q3.txt   -----  cp less_1/q4.json less_2/q4.json    
+или 
+cp less_1/{q4.json,q5.json} less_2/
+
+
+15) Найти файл по имени find . -name q1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. tail -f q2.txt | grep hello
+17) вывести несколько первых строк из текстового файла -------- head -2 q1.txt
+18) вывести несколько последних строк из текстового файла ----- tail -2 q1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. ----- less q1.txt
+20) вывести дату и время ------ date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+curl http://162.55.220.72:5005/terminal-hw-request
+
+
+curl http://162.55.220.72:5005/get_method?name=viktoria&age=25
+["viktoria","25"]
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+cat >> script.sh
+#!/bin/bash
+cd qa_1
+mkdir less_1 less_2 less_3 
+cd less_1
+touch q1.txt q2.txt q3.txt q4.json q5.json
+mkdir part_1 part_2 part_3
+ls -la
+mv q1.txt q2.txt part_1
+
+ctrl+C
+
+Готово!
+
+
