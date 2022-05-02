@@ -7,9 +7,9 @@ JSON
  9. Отправить файл на внешний GitHub репозиторий. --- git push
  10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON. ----- vim new.json / INSERT/ add information / ESC :wq/
  11. Отправить изменения на внешний репозиторий.  ---- git commit -am "changed new.json file" / git push
- 12. Создать файл preferences.json ----- vim preferrences.json
- 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. ---  INSERT/ add information / ESC :wq/
- 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON ----- vim sklls.json
+ 12. Создать файл preferences.json ----- git add preferrences.json 
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. ---- vim preferences.json  ---  INSERT/ add information / ESC :wq/
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON ----- vim sklls.json / INSERT/ add information / ESC :wq/
  15. Отправить сразу 2 файла на внешний репозиторий. ----- git add . /git commit -m "add new files" // git push
  16. На веб интерфейсе создать файл bug_report.json.   --- зайти на сайт GitHub.com / залогиниться / зайти на главную страницу / репозиторий JSON / add file / create new file / 
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. ----commit new file
@@ -31,8 +31,8 @@ XML
  29. Создать файл preferences.xml ----- vim preferrences.xml
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. ----INSERT/ add information / ESC :wq/
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML ----- vim sklls.xml ----INSERT/ add information / ESC :wq/
- 32. Сделать коммит в одну строку. ---- git add . 
- 33. Отправить сразу 2 файла на внешний репозиторий.  ---- git commit -m "add new files" // git push
+ 32. Сделать коммит в одну строку. ---- git add .  ; git commit -m "add new files"
+ 33. Отправить сразу 2 файла на внешний репозиторий. ----  // git push
  34. На веб интерфейсе создать файл bug_report.xml.  --- зайти на сайт GitHub.com / залогиниться / зайти на главную страницу / репозиторий XML / add file / create new file / 
  35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  ----commit new file 
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. --push bug_report.xml / edit this file / add information/ 
@@ -52,8 +52,8 @@ TXT
  9. Создать файл preferences.txt ----- vim preferrences.txt
  10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT. ----INSERT/ add information / ESC :wq/
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT ----- vim sklls.txt ----INSERT/ add information / ESC :wq/
- 12. Сделать коммит в одну строку. ---- git add . 
- 13. Отправить сразу 2 файла на внешний репозиторий. ---- git commit -m "add new files" // git push
+ 12. Сделать коммит в одну строку. ---- git add .  ; git commit -m "add new files"
+ 13. Отправить сразу 2 файла на внешний репозиторий. ----  // git push
  14. На веб интерфейсе создать файл bug_report.txt. --- зайти на сайт GitHub.com / залогиниться / зайти на главную страницу / репозиторий TXT / add file / create new file /
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. ----commit new file 
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT. --push bug_report.txt / edit this file / add information/ 
